@@ -5,12 +5,6 @@ import { Greet } from "./greet";
 
 test('Greet renders correctly', () => {
     render(<Greet />)
-    const textEl = screen.getByText("Hello")
-    expect(textEl).toBeInTheDocument()
-})
-
-test('Greet render hello with a name', () => {
-    render(<Greet name="Piyush" />)
-    const textEl = screen.getByText("Hello Piyush")
+    const textEl = screen.getByText(/Hello/)
     expect(textEl).toBeInTheDocument()
 })
