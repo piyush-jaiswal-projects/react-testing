@@ -1,7 +1,7 @@
-import React from "react";
-import "./App.css";
-import { AppProviders } from "./providers/app-providers";
-import { MuiMode } from "./components/mui/mui-mode";
+import React from 'react'
+import './App.css'
+import { AppProviders } from './providers/app-providers'
+import { MuiMode } from './components/mui/mui-mode'
 
 // const skills: string[] = ['HTML', 'CSS', 'Javascript'];
 
@@ -12,7 +12,7 @@ function App() {
         <MuiMode />
       </div>
     </AppProviders>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,14 +1,13 @@
-import { useState, useEffect } from "react"
-import { setTimeout } from "timers/promises"
+import { useState } from 'react'
 
 type SkillsProps = {
-    skills: string[],
+  skills: string[]
 }
 
 export const Skills = (props: SkillsProps) => {
-    const { skills } = props
+  const { skills } = props
   const [isLoggedIn, setIsLoggedIn] = useState(false)
-  
+
   // useEffect(() => {
   //   //@ts-ignore
   //   setTimeout(() => {
