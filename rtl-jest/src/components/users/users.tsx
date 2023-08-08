@@ -6,20 +6,13 @@ export const Users = () => {
 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
-        .then((res) => res.json())
-        
-        .then((data) => setUsers(data.map((user:
-            { name: string }) => user.name)))
+      .then((res) => res.json())
+
+      .then((data) => setUsers(data.map((user: { name: string }) => user.name)))
       .catch((error) => setError('Error fetching users'))
   }, [])
 
-    return (
-      
-
-
-
-
-
+  return (
     <div>
       <h1>Users</h1>
       {error && <p>{error}</p>}
